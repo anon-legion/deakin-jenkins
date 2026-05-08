@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        STAGING_SERVER  = 'ec2-user@<staging-ip>'
-        PROD_SERVER     = 'ec2-user@<prod-ip>'
-        SONAR_PROJECT   = 'myapp'
-        APP_NAME        = 'myapp'
-    }
-
     stages {
 
         stage('Build') {
